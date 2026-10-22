@@ -93,14 +93,14 @@ Machi:
     Goal_Default(2,GOAL_Wait,2,,,,,,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(1,GOAL_Action,8,,'Abbott','Abbott',,'TalkStNmBB0',FALSE,,,,);
     Goal_Set(1,GOAL_Stop,4,,'Abbott','Abbott',,,FALSE,10,,,);
-    Talk(Sound'S1_3_3Voice.Play_13_29_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_MachiDistract", "Speech_0001L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_29_01', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(2,GOAL_Action,9,,'Costello','Costello','Abbott_0','TalkStNmAA0',FALSE,,,,);
     Goal_Set(2,GOAL_Stop,4,,'Costello','Costello','Abbott_0',,FALSE,7,,,);
-    Talk(Sound'S1_3_3Voice.Play_13_29_02', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_MachiDistract", "Speech_0003L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_29_02', 2, 0, TR_CONVERSATION, 0, false);
     Goal_Set(1,GOAL_Action,9,,'Abbott','Abbott',,'TalkStNmCC0',FALSE,,,,);
-    Talk(Sound'S1_3_3Voice.Play_13_29_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_MachiDistract", "Speech_0004L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_29_03', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(2,GOAL_Action,9,,'Costello','Costello',,'ReacStNmAA0',FALSE,,,,);
-    Talk(Sound'S1_3_3Voice.Play_13_29_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_MachiDistract", "Speech_0005L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_29_04', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(1);
     Close();
     ChangeGroupState('s_alert');

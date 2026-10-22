@@ -94,12 +94,12 @@ start:
     CinCamera(0, 'EFocusPoint88', 'EFocusPoint85',);
     ResetGoals(2);
     Goal_Default(2,GOAL_Wait,9,,,,,'LstnStNmBB0',FALSE,,,,);
-    Talk(Sound'S4_2_1Voice.Play_42_10_01', 7, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0012L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_10_01', 7, 0, TR_CONVERSATION, 0, false);
     ResetGoals(6);
     Goal_Set(6,GOAL_Action,9,,,,,'TalkStNmCC0',FALSE,,,,);
     Goal_Set(6,GOAL_Action,8,,,,,'TalkStNmBB0',FALSE,,,,);
     CinCamera(0, 'EFocusPoint86', 'EFocusPoint87',);
-    Talk(Sound'S4_2_1Voice.Play_42_10_02', 6, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0003L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_10_02', 6, 0, TR_CONVERSATION, 0, false);
     ResetGoals(2);
     Goal_Set(2,GOAL_Action,9,,,,,'TalkStNmCC0',FALSE,,,,);
     Goal_Set(2,GOAL_Action,8,,,,,'TalkStNmBB0',FALSE,,,,);
@@ -132,7 +132,7 @@ start:
     Goal_Default(3,GOAL_Wait,8,,'EFocusPoint84','PathNode395',,,TRUE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     ResetGoals(6);
     Goal_Set(6,GOAL_Action,9,,,,,'LstnStNmCC0',FALSE,,,,);
-    Talk(Sound'S4_2_1Voice.Play_42_10_04', 6, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0005L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_10_04', 6, 0, TR_CONVERSATION, 0, false);
     ResetGoals(1);
     Goal_Set(1,GOAL_MoveTo,9,,,,'PathNode408',,FALSE,,,,);
     Goal_Set(1,GOAL_Wait,8,,,,'PathNode408',,FALSE,,,,);
@@ -217,7 +217,7 @@ start2:
     Goal_Default(8,GOAL_Wait,9,,,,'PathNode203',,FALSE,,,,);
     ResetGoals(9);
     Goal_Default(9,GOAL_Wait,9,,,,'PathNode203',,FALSE,,,,);
-    Talk(Sound'S4_2_1Voice.Play_42_31_01', 5, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0019L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_31_01', 5, 0, TR_CONVERSATION, 0, false);
     Sleep(2);
     ResetGoals(5);
     Goal_Default(5,GOAL_Wait,9,,,,'PathNode202',,FALSE,,,,);

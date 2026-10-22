@@ -74,32 +74,32 @@ LambertStart:
     Log("Lambert comm while in the van in the begining.");
 MeetLongDan:
     Log("Meet Long Dan");
-    Talk(Sound'S4_2_2Voice.Play_42_50_01', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_02', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0013L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_01', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0014L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_02', 0, 0, TR_CONVERSATION, 0, false);
     GoalCompleted('LocateSoldier');
     ResetGoals(2);
     Goal_Default(2,GOAL_Action,9,,,,,'TalkStNmBB0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_03', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0015L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_03', 2, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,8,,,,,'LstnStNmBB0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_04', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0016L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_04', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,7,,,,,'TalkStNmCC0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_05', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_06', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0017L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_05', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0018L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_06', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,5,,,,,'TalkStNmDD0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_07', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_08', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0019L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_07', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0020L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_08', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,4,,,,,'TalkStNmAA0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_09', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_10', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0021L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_09', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0022L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_10', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,3,,,,,'LstnStNmBB0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_11', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_12', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0023L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_11', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0024L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_12', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,2,,,,,'TalkStNmCC0',FALSE,,,,);
-    Talk(Sound'S4_2_2Voice.Play_42_50_13', 2, , TRUE, 0);
-    Talk(Sound'S4_2_2Voice.Play_42_50_14', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0025L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_13', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0026L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_14', 0, 0, TR_CONVERSATION, 0, false);
     Goal_Default(2,GOAL_Action,1,,,,,'LstnStNmBB0',FALSE,,,,);
 blam2:
-    Talk(Sound'S4_2_2Voice.Play_42_50_15', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0027L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_15', 2, 0, TR_CONVERSATION, 0, false);
     EndConversation();
     IgnoreAlarmStage(TRUE); // Joshua - Fight has begun, disable alarms
 SkipLD:

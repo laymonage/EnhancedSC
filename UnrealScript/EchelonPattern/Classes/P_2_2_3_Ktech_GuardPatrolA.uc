@@ -72,9 +72,9 @@ GuardPatrolA:
     Goal_Set(1,GOAL_MoveTo,9,,,,'GuardPatrolANode03',,FALSE,,MOVE_WalkAlert,,MOVE_WalkAlert);
     Goal_Set(2,GOAL_MoveTo,9,,,,'GuardPatrolANode04',,FALSE,,MOVE_WalkAlert,,MOVE_WalkAlert);
     Sleep(5);
-    Talk(Sound'S2_2_3Voice.Play_22_58_01', 1, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_58_02', 2, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_58_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_GuardPatrolA", "Speech_0005L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_58_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_GuardPatrolA", "Speech_0006L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_58_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_GuardPatrolA", "Speech_0007L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_58_03', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     WaitForGoal(1,GOAL_MoveTo,);
     WaitForGoal(2,GOAL_MoveTo,);

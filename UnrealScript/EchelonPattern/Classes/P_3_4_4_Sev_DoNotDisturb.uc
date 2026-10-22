@@ -60,13 +60,13 @@ OnisimGo:
     SetFlags(TriggeredAlready,TRUE);
     Goal_Set(2,GOAL_MoveTo,9,,,,'Permission',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     WaitForGoal(2,GOAL_MoveTo,);
-    Talk(Sound'S3_4_3Voice.Play_34_59_01', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_DoNotDisturb", "Speech_0001L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_59_01', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_59_02', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_DoNotDisturb", "Speech_0002L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_59_02', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_59_03', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_DoNotDisturb", "Speech_0003L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_59_03', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_59_04', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_DoNotDisturb", "Speech_0004L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_59_04', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Goal_Default(2,GOAL_Patrol,0,,,,'Onisim_500',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     End();

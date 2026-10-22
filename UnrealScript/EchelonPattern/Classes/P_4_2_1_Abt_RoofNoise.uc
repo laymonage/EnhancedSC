@@ -77,7 +77,7 @@ FirstTime:
     Log("First time that Sam walk on the roof");
     SetFlags(Pass2,TRUE);
 	SoundActors[0].PlaySound(Sound'S4_2_1Voice.Stop_42_35_01', SLOT_Barks);
-    Talk(Sound'S4_2_1Voice.Play_42_07_01', 3, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_RoofNoise", "Speech_0005L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_07_01', 3, 0, TR_CONVERSATION, 0, false);
     Talk(Sound'S4_2_1Voice.Play_42_07_02', 3, , FALSE, 0);
     SendPatternEvent('EGroupAI18','ResetPass1');
     End();
@@ -127,7 +127,7 @@ FlagAntennaSAFE:
     End();
 GrinkoTalk:
     Log("GrinkoTalk");
-    Talk(Sound'S4_2_1Voice.Play_42_35_01', 3, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_RoofNoise", "Speech_0006L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_35_01', 3, 0, TR_CONVERSATION, 0, false);
     End();
 StopTalk:
     Log("");

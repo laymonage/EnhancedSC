@@ -245,13 +245,13 @@ LookOut:
     Goal_Set(3,GOAL_Action,9,,,,,'ReacStAlFd0',FALSE,,,,);
     SendPatternEvent('TopDudes','Incoming');
     ChangeGroupState('s_alert');
-    Talk(Sound'S1_3_3Voice.Play_13_35_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0011L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_35_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S1_3_3Voice.Play_13_35_02', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0012L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_35_02', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S1_3_3Voice.Play_13_35_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0013L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_35_03', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.01);
-    Talk(Sound'S1_3_3Voice.Play_13_35_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0014L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_35_04', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     End();
@@ -449,13 +449,13 @@ DeadEndSpeech:
     Log("Runs the dead end speech pattern, and sends the group back from whence they came.");
     SetFlags(SpeechRun,TRUE);
     SendPatternEvent('BoomTimerAI','DelayedPK');
-    Talk(Sound'S1_3_3Voice.Play_13_30_01', 2, , TRUE, 0);
-    Talk(Sound'S1_3_3Voice.Play_13_30_02', 3, , TRUE, 0);
-    Talk(Sound'S1_3_3Voice.Play_13_30_03', 2, , TRUE, 0);
-    Talk(Sound'S1_3_3Voice.Play_13_30_04', 1, , TRUE, 0);
-    Talk(Sound'S1_3_3Voice.Play_13_30_05', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0005L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_01', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0006L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_02', 3, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0007L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_03', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0008L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_04', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0009L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_05', 2, 0, TR_CONVERSATION, 0, false);
     SendUnrealEvent('Check5');
-    Talk(Sound'S1_3_3Voice.Play_13_30_06', 3, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_3_3OilRig_Escort", "Speech_0010L", "Localization\\P_1_3_3CaspianOilRefinery"), Sound'S1_3_3Voice.Play_13_30_06', 3, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 SpecCase:

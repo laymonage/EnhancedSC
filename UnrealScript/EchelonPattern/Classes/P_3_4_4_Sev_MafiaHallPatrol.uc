@@ -58,11 +58,11 @@ StartPatrol:
 QuickBanter:
     Log("Sofron speaks to Billy Bob before going downstairs");
     Goal_Set(1,GOAL_Stop,9,,'Looky','Looky','Sofron_300',,FALSE,4,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S3_4_3Voice.Play_34_55_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_MafiaHallPatrol", "Speech_0001L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_55_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_55_02', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_MafiaHallPatrol", "Speech_0002L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_55_02', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_55_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_4_Sev_MafiaHallPatrol", "Speech_0003L", "Localization\\P_3_4_4Severonickel"), Sound'S3_4_3Voice.Play_34_55_03', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     End();

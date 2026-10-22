@@ -100,15 +100,15 @@ TimerBypass:
     End();
 InteractComp:
     Log("Sam has forced Masse to use his computer.");
-    Talk(Sound'S3_4_3Voice.Play_34_61_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0001L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_61_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_61_02', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0002L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_61_02', 0, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_61_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0003L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_61_03', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_61_04', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0004L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_61_04', 0, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_3Voice.Play_34_61_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0005L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_61_05', 1, 0, TR_CONVERSATION, 0, false);
     GoalCompleted('COOPMASSE');
     SetFlags(V3_4_3Severonickel(Level.VarObject).SafeToKillMasse,TRUE);
     Sleep(0.1);
@@ -127,7 +127,7 @@ FirstHear:
     Log("First time Masse Hears Sam");
     SetFlags(HeardOnce,TRUE);
     Goal_Set(1,GOAL_Action,9,,,,,'LookStNmUp0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S3_4_3Voice.Play_34_50_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0007L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_50_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     End();
@@ -136,7 +136,7 @@ SecondHear:
     SetFlags(HeardTwice,TRUE);
     Goal_Set(1,GOAL_Action,9,,,,,'LookStNmBk0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     WaitForGoal(1,GOAL_Action,);
-    Talk(Sound'S3_4_3Voice.Play_34_50_02', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0008L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_50_02', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     End();
@@ -152,7 +152,7 @@ SeeSAM:
     ResetGroupGoals();
     Goal_Set(1,GOAL_MoveTo,9,,'focusMasseA','MasseKeyboard','EMasse_0',,TRUE,,MOVE_JogAlert,,MOVE_JogAlert);
     Goal_Set(1,GOAL_Action,8,,,,'focusMasseA','ReacStNmBB0',FALSE,,MOVE_JogAlert,,MOVE_JogAlert);
-    Talk(Sound'S3_4_3Voice.Play_34_50_04', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_3_Sev_Masse", "Speech_0006L", "Localization\\P_3_4_3Severonickel"), Sound'S3_4_3Voice.Play_34_50_04', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     Goal_Set(1,GOAL_Wait,7,,,,'focusMasseA','KbrdStNmNt0',FALSE,,MOVE_JogAlert,,MOVE_JogAlert);

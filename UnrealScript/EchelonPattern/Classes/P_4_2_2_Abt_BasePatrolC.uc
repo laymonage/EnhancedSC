@@ -65,13 +65,13 @@ NikOut:
     CheckIfIsUnconscious(1,'GetToDefaut');
     CheckIfIsDead(2,'GetToDefaut');
     CheckIfIsUnconscious(2,'GetToDefaut');
-    Talk(Sound'S4_2_2Voice.Play_42_11_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0001L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_01', 1, 0, TR_CONVERSATION, 0, false);
     Log("passed first line");
-    Talk(Sound'S4_2_2Voice.Play_42_11_02', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0002L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_02', 2, 0, TR_CONVERSATION, 0, false);
     Log("passed second line");
-    Talk(Sound'S4_2_2Voice.Play_42_11_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0003L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_03', 1, 0, TR_CONVERSATION, 0, false);
     Log("passed third line");
-    Talk(Sound'S4_2_2Voice.Play_42_11_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0004L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_04', 2, 0, TR_CONVERSATION, 0, false);
     Log("passed last line, ending conversation");
     End();
 GetToDefaut:

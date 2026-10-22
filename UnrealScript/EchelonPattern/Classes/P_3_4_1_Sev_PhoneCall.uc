@@ -57,7 +57,7 @@ PhoneStart:
     SetFlags(PhonedOnce,TRUE);
     Goal_Set(1,GOAL_Action,9,,'NeilFocus',,'NeilFocus','RdioStNmBg0',FALSE,,,,);
     Goal_Default(1,GOAL_Wait,0,,'NeilFocus',,,'RdioStNmNt0',FALSE,,,,);
-    Talk(Sound'S3_4_2Voice.Play_34_20_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_1_Sev_PhoneCall", "Speech_0001L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_20_01', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     Goal_Set(1,GOAL_Action,9,,'NeilFocus',,'NeilFocus','RdioStNmEd0',FALSE,,,,);
     WaitForGoal(1,GOAL_Action,);

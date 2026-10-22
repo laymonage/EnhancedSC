@@ -81,11 +81,11 @@ SeenSam:
     Log("The prisoners saw sam");
     CheckFlags(Seen,TRUE,'DoNothing');
     SetFlags(Seen,TRUE);
-    Talk(Sound'S1_1_2Voice.Play_11_28_09', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Prisoners", "Speech_0001L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_28_09', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(1);
-    Talk(Sound'S1_1_2Voice.Play_11_28_10', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Prisoners", "Speech_0002L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_28_10', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(1);
-    Talk(Sound'S1_1_2Voice.Play_11_28_11', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Prisoners", "Speech_0003L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_28_11', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(1);
     Close();
     End();

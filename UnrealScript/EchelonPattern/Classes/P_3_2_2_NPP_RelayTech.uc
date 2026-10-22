@@ -51,7 +51,7 @@ state Pattern
 Begin:
 Relay:
     Log("Mojo");
-    Talk(Sound'S3_2_2Voice.Play_32_42_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_2_2_NPP_RelayTech", "Speech_0001L", "Localization\\P_3_2_2_PowerPlant"), Sound'S3_2_2Voice.Play_32_42_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(8);
     Close();
     End();

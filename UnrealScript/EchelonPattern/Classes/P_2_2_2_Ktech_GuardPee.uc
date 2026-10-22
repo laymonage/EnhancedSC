@@ -57,17 +57,17 @@ GuardGoingPee:
     Goal_Default(2,GOAL_Guard,9,,'GuardPeeWaitFocus01',,'GuardPeeNode01',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Set(2,GOAL_MoveTo,9,,,,'GuardPeeNode01',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Set(2,GOAL_InteractWith,8,,,,'KitchenLightSwitch',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
-    Talk(Sound'S2_2_2Voice.Play_22_46_01', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_02', 2, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_03', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_04', 2, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_05', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_06', 2, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_07', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0001L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0002L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0001L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0002L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_04', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0003L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0004L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_06', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0005L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_07', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     Sleep(2);
-    Talk(Sound'S2_2_2Voice.Play_22_46_08', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_09', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0006L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_08', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0007L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_09', 2, 0, TR_CONVERSATION, 0, false);
     Close();
     ResetGroupGoals();
     Goal_Default(2,GOAL_Guard,9,,'GuardPeeFocus01',,'GuardPeeNode04',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
@@ -87,8 +87,8 @@ GuardGoingPee:
     Goal_Default(1,GOAL_Guard,7,,'GuardPeeFocus02',,'GuardPeeNode05',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Default(2,GOAL_Guard,9,,'GuardPeeFocus02',,'GuardPeeNode04',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     CheckIfIsDead(2,'NoSpeech');
-    Talk(Sound'S2_2_2Voice.Play_22_46_10', 2, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_46_11', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0008L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_10', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_GuardPee", "Speech_0009L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_46_11', 1, 0, TR_CONVERSATION, 0, false);
     Close();
 NoSpeech:
     End();

@@ -60,19 +60,19 @@ TalkTech:
 talk:
     CheckFlags(TheyveTalked,TRUE,'Already');
     SetFlags(TheyveTalked,TRUE);
-    Talk(Sound'S3_4_2Voice.Play_34_33_01', 0, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_02', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_03', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_04', 0, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_05', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_06', 0, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_07', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_08', 0, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_33_09', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0008L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_01', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0009L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_02', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0010L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0011L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_04', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0012L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0013L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_06', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0001L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_07', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0002L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_08', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0003L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_09', 1, 0, TR_CONVERSATION, 0, false);
     //AddNote("", "P_3_4_2_Sev_SAMTechnician", "Note_0014L", "Localization\\P_3_4_2Severonickel");
     // Joshua - Fixing incorrect note assigned
     AddNote("", "P_3_4_2_Sev_SAMTechnician", "Note_0005L", "Localization\\P_3_4_2Severonickel");
-    Talk(Sound'S3_4_2Voice.Play_34_33_10', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0004L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_10', 0, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 Already:
@@ -80,11 +80,11 @@ Already:
     CheckFlags(TheyveTalkedTwice,TRUE,'SecondPoss');
     SetFlags(TheyveTalkedTwice,TRUE);
 FirstPoss:
-    Talk(Sound'S3_4_2Voice.Play_34_33_11', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0006L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_11', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 SecondPoss:
-    Talk(Sound'S3_4_2Voice.Play_34_33_12', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_SAMTechnician", "Speech_0007L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_33_12', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     End();

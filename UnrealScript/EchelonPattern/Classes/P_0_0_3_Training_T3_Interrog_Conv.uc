@@ -70,22 +70,22 @@ BeginConversation:
     End();
 GrabbedConv:
     Log("GrabbedConv");
-    Talk(Sound'S0_0_Voice.Play_00_25_01', 0, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_02', 1, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_03', 0, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_04', 1, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_05', 0, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_06', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0007L", "Localization\\P_0_0_3_Training"), Sound'S0_0_Voice.Play_00_25_01', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0016L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_02', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0009L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_03', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0010L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_04', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0011L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_05', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0012L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_06', 1, 0, TR_CONVERSATION, 0, false);
     SendPatternEvent('GroupKeypad03','GotCode');
     AddNote("", "P_0_0_3_Training_T3_Interrog_Conv", "Note_0017L", "Localization\\P_0_0_3_Training");
     SetFlags(bInterrogate,TRUE);
-    Talk(Sound'S0_0_3Voice.Play_00_25_07', 0, , TRUE, 0);
-    Talk(Sound'S0_0_3Voice.Play_00_25_08', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0014L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_07', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0018L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_08', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 AfterInterrogateConv:
     Log("AfterInterrogateConv");
-    Talk(Sound'S0_0_3Voice.Play_00_25_06', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_0_0_3_Training_T3_Interrog_Conv", "Speech_0015L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_06', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 BreakConv:

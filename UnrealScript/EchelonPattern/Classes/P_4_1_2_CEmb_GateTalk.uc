@@ -82,11 +82,11 @@ state Pattern
 Begin:
 Milestone:
     Log("Milestone");
-    Talk(Sound'S4_1_2Voice.Play_41_18_01', 1, , TRUE, 0);
-    Talk(Sound'S4_1_2Voice.Play_41_18_02', 1, , TRUE, 0);
-    Talk(Sound'S4_1_2Voice.Play_41_18_03', 1, , TRUE, 0);
-    Talk(Sound'S4_1_2Voice.Play_41_18_04', 1, , TRUE, 0);
-    Talk(Sound'S4_1_2Voice.Play_41_18_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0001L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0002L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_02', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0003L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0004L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_04', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0005L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_05', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     Goal_Set(1,GOAL_MoveTo,9,,,,'GateGuard',,TRUE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Default(1,GOAL_Guard,8,,'ECS13B',,'GateGuard',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
@@ -95,7 +95,7 @@ Milestone:
     Goal_Set(1,GOAL_MoveTo,9,,,,'GateGuard2',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Default(1,GOAL_Guard,9,,'ECS13',,'GateGuard2',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Sleep(2);
-    Talk(Sound'S4_1_2Voice.Play_41_18_06', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_GateTalk", "Speech_0010L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_18_06', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     SendPatternEvent('BogusTruckPass','ClosingGate');
     End();

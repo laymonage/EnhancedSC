@@ -84,9 +84,9 @@ MainHallScan:
     SetExclusivity(FALSE);
     SendPatternEvent('DummyA','CheckTriggers');
     Sleep(8);
-    Talk(Sound'S4_3_1Voice.Play_43_26_01', 2, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_26_02', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_26_03', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_1_MainHallRetinalScanner", "Speech_0001L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_26_01', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_MainHallRetinalScanner", "Speech_0002L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_26_02', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_MainHallRetinalScanner", "Speech_0003L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_26_03', 2, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 TriggerRetinalScanner:
@@ -98,8 +98,8 @@ TriggerRetinalScanner:
     SetFlags(CanKillColonel,TRUE);
     CheckFlags(SpeechAlreadyDone,TRUE,'IfSpeechDone');
     SetFlags(SpeechAlreadyDone,TRUE);
-    Talk(Sound'S4_3_1Voice.Play_43_26_04', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_26_05', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_1_MainHallRetinalScanner", "Speech_0004L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_26_04', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_MainHallRetinalScanner", "Speech_0005L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_26_05', 2, 0, TR_CONVERSATION, 0, false);
     Close();
 IfSpeechDone:
     Log("If the speech was already done");

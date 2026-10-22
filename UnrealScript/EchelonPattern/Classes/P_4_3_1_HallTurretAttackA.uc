@@ -60,14 +60,14 @@ HallTurretAttackA:
     Goal_Default(2,GOAL_Guard,9,,'SquadAFocus',,'SquadAPatrolnode01',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Set(1,GOAL_Stop,9,,,,'HallSquadASpawn2',,FALSE,5,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Set(2,GOAL_Stop,9,,,,'HallSquadASpawn1',,FALSE,5,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
-    Talk(Sound'S4_3_1Voice.Play_43_27_01', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_02', 2, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_03', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_04', 2, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_05', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_06', 2, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_07', 1, , TRUE, 0);
-    Talk(Sound'S4_3_1Voice.Play_43_27_08', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0001L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0002L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0003L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0004L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_04', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0005L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0006L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_06', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0007L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_07', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_1_HallTurretAttackA", "Speech_0008L", "Localization\\P_4_3_1ChineseEmbassy"), Sound'S4_3_1Voice.Play_43_27_08', 2, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 

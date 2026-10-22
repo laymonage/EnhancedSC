@@ -85,10 +85,10 @@ Milestone:
     Goal_Set(1,GOAL_Wait,9,,,,,,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(2,GOAL_Wait,9,,,,,,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(3,GOAL_Wait,9,,,,,,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S4_1_1Voice.Play_41_14_01', 1, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_14_02', 2, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_14_03', 1, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_14_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_StopBreak", "Speech_0002L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_14_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_StopBreak", "Speech_0002L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_14_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_StopBreak", "Speech_0003L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_14_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_StopBreak", "Speech_0004L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_14_04', 2, 0, TR_CONVERSATION, 0, false);
     Close();
     ResetGroupGoals();
     SetExclusivity(FALSE);

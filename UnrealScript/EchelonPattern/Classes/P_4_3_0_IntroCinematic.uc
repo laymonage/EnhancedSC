@@ -62,9 +62,9 @@ state Pattern
 Begin:
 IntroCinematicStart:
     Log("IntroStart");
-    Talk(Sound'S4_3_0Voice.Play_43_03_01', 1, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_03_02', 0, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_03_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_0_IntroCinematic", "Speech_0001L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_03_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_IntroCinematic", "Speech_0002L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_03_02', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_IntroCinematic", "Speech_0003L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_03_03', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     End();

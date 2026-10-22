@@ -95,14 +95,14 @@ OffHeard:
     Log("Off - Retinal04");
     DisableMessages(TRUE, TRUE);
     PlayerMove(false);
-    Talk(Sound'S0_0_3Voice.Play_00_25_09', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Retinal04", "Speech_0003L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_09', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(3);
     Jump('Failed');
 OffSaw:
     Log("");
     DisableMessages(TRUE, TRUE);
     PlayerMove(false);
-    Talk(Sound'S0_0_3Voice.Play_00_25_10', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Retinal04", "Speech_0004L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_10', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(3);
     Jump('Failed');
 OffDamage:

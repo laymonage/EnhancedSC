@@ -72,12 +72,12 @@ MasseAPart:
     Goal_Default(2,GOAL_Guard,0,,'PhillipMasse',,'NikWatchMasse',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Sleep(3);
     Goal_Set(1,GOAL_Action,9,,,,,'3447mss1',FALSE,,,,);
-    Talk(Sound'S3_4_2Voice.Play_34_46_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0005L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_46_01', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(2,GOAL_Action,9,,,,,'PrsoStNmBB0',FALSE,,,,);
-    Talk(Sound'S3_4_2Voice.Play_34_46_02', 2, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_46_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0006L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_46_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0007L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_46_03', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(2,GOAL_Action,9,,,,,'PrsoStNmCC0',FALSE,,,,);
-    Talk(Sound'S3_4_2Voice.Play_34_46_04', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0008L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_46_04', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     CinCamera(1, , ,);
     Sleep(2);
@@ -86,15 +86,15 @@ MasseAPart:
 MasseBPart:
     Log("Masse yells at Nikolai some more.");
     Goal_Set(1,GOAL_Action,9,,,,,,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S3_4_2Voice.Play_34_47_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0009L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_47_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_2Voice.Play_34_47_02', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0010L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_47_02', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_2Voice.Play_34_47_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0011L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_47_03', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_2Voice.Play_34_47_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0012L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_47_04', 2, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
-    Talk(Sound'S3_4_2Voice.Play_34_47_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_2_Sev_MassePanic", "Speech_0013L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_47_05', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(0.1);
     Close();
     SetExclusivity(FALSE);

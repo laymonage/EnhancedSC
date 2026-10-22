@@ -66,10 +66,10 @@ TechDyingBonus:
 FirstConversation:
     Log("FirstConversation");
     SetFlags(V2_2_2_Kalinatek(Level.VarObject).TechDyingFirstConversation,TRUE);
-    Talk(Sound'S2_2_2Voice.Play_22_30_01', 0, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_30_02', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_30_03', 0, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_30_04', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0001L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_30_01', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0002L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_30_02', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0003L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_30_03', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0004L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_30_04', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     Goal_Set(1,GOAL_Action,9,,,,,'TalkDnAlEd0',FALSE,,,,);
@@ -79,14 +79,14 @@ FirstConversation:
     End();
 TechRevived:
     Log("TechRevived");
-    Talk(Sound'S2_2_2Voice.Play_22_31_01', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_31_02', 0, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_31_03', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_31_04', 0, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0006L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0007L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_02', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0008L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0009L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_04', 0, 0, TR_CONVERSATION, 0, false);
     AddNote("", "P_2_2_2_Ktech_TechDyingBonus", "Note_0015L", "Localization\\P_2_2_2_Kalinatek");
-    Talk(Sound'S2_2_2Voice.Play_22_31_05', 1, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_31_06', 0, , TRUE, 0);
-    Talk(Sound'S2_2_2Voice.Play_22_31_07', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0010L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0012L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_06', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_TechDyingBonus", "Speech_0014L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_31_07', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     ResetGoals(1);

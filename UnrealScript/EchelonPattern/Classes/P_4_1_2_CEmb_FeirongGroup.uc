@@ -103,7 +103,7 @@ FeirongConversationA:
     CinCamera(1, , ,);
     Sleep(8);
     LaserMicSession(0,'WindowMover',0,'');
-    Talk(Sound'S4_1_2Voice.Play_41_20_01', 1, , TRUE, 100);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0033L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_20_01', 1, 0, TR_CONVERSATION, 100, false);
     Close();
     LaserMicSession(1,,80,'FirstLaserMicDone');
     SendPatternEvent('LambertBogus','LaserMicFailureB');
@@ -150,9 +150,9 @@ FeirongConversationB:
 	SoundActors[0].PlaySound(Sound'Vehicules.Play_CadillacIdle', SLOT_SFX);
     Sleep(3);
     LaserMicSession(0,'LaserMicLimo',0,'');
-    Talk(Sound'S4_1_2Voice.Play_41_35_01', 3, , TRUE, 34);
-    Talk(Sound'S4_1_2Voice.Play_41_35_02', 3, , TRUE, 33);
-    Talk(Sound'S4_1_2Voice.Play_41_35_03', 3, , TRUE, 33);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0012L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_01', 3, 0, TR_CONVERSATION, 34, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0047L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_02', 3, 0, TR_CONVERSATION, 33, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0043L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_03', 3, 0, TR_CONVERSATION, 33, false);
     LaserMicSession(1,,50,'MainGateCheck');
     SendPatternEvent('LambertBogus','LaserMicFailure');
     End();

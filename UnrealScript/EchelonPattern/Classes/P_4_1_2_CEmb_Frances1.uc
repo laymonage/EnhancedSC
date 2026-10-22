@@ -52,8 +52,8 @@ Begin:
 Milestone:
     Log("Milestone");
     DisableMessages(TRUE, TRUE);
-    Talk(Sound'S4_1_2Voice.Play_41_46_01', 1, , TRUE, 0);
-    Talk(Sound'S4_1_2Voice.Play_41_46_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_Frances1", "Speech_0005L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_46_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_2_CEmb_Frances1", "Speech_0006L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_46_03', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     GameOver(true, 0);

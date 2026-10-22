@@ -84,12 +84,12 @@ WelcomePartyStart:
     SetExclusivity(FALSE);
     Sleep(1);
     ChangeGroupState('s_default');
-    Talk(Sound'S2_2_1Voice.Play_22_64_01', 4, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_64_02', 3, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_64_03', 4, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_64_04', 3, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_64_05', 4, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_64_06', 3, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0002L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_01', 4, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0003L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_02', 3, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0004L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_03', 4, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0005L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_04', 3, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0006L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_05', 4, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_WelcomeParty", "Speech_0007L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_64_06', 3, 0, TR_CONVERSATION, 0, false);
     Close();
     ResetGroupGoals();
     Goal_Default(3,GOAL_Guard,9,,'WelcomePartyFocus01',,'WelcomePartyNode06',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);

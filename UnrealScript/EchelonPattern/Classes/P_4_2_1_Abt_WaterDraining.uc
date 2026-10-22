@@ -87,13 +87,13 @@ Speach:
     Goal_Set(1,GOAL_MoveTo,9,,'EFocusPoint6',,'PathNode27',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Default(1,GOAL_Guard,8,,'EFocusPoint25',,'PathNode27',,FALSE,,MOVE_WalkNormal,,MOVE_CrouchWalk);
     Sleep(2);
-    Talk(Sound'S4_2_1Voice.Play_42_04_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_WaterDraining", "Speech_0001L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_04_01', 1, 0, TR_CONVERSATION, 0, false);
     ResetGoals(2);
     Goal_Set(2,GOAL_MoveTo,9,,'EFocusPoint25',,'EGeorgianSoldier7_150',,FALSE,,MOVE_WalkNormal,,);
     Goal_Default(2,GOAL_Guard,8,,'EFocusPoint25',,'EGeorgianSoldier7_150',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Sleep(1);
-    Talk(Sound'S4_2_1Voice.Play_42_04_02', 2, , TRUE, 0);
-    Talk(Sound'S4_2_1Voice.Play_42_04_03', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_WaterDraining", "Speech_0002L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_04_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_2_1_Abt_WaterDraining", "Speech_0003L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_04_03', 1, 0, TR_CONVERSATION, 0, false);
     ResetGoals(1);
     Goal_Set(1,GOAL_MoveTo,9,,'EFocusPoint0',,'PathNode243',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Default(1,GOAL_Guard,8,,'EFocusPoint0',,'PathNode243',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);

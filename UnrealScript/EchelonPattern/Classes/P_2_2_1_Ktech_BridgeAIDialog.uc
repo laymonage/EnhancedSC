@@ -56,13 +56,13 @@ AIConversation1:
     Goal_Default(1,GOAL_Guard,8,,'BridgeAIDialogFocus01',,'BridgeAIDialogNode01',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Default(2,GOAL_Guard,8,,'BridgeAIDialogFocus01',,'BridgeAIDialogNode02',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Sleep(2);
-    Talk(Sound'S2_2_1Voice.Play_22_12_01', 1, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_02', 2, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_03', 1, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_04', 2, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_05', 1, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_06', 2, , TRUE, 0);
-    Talk(Sound'S2_2_1Voice.Play_22_12_07', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0001L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0002L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0003L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0004L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_04', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0005L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0006L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_06', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_1_Ktech_BridgeAIDialog", "Speech_0007L", "Localization\\P_2_2_1_Kalinatek"), Sound'S2_2_1Voice.Play_22_12_07', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 SetNPCs:

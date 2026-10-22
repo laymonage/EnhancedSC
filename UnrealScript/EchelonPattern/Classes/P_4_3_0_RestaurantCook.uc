@@ -96,12 +96,12 @@ CookAndSoldiers:
     CheckIfIsDead(3,'AlreadyStarted');
     CheckFlags(PatternAlreadyStarted,TRUE,'AlreadyStarted');
     CheckFlags(bDisturbed,TRUE,'AlreadyStarted');
-    Talk(Sound'S4_3_0Voice.Play_43_06_01', 2, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_06_02', 3, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_06_03', 2, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_06_04', 3, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_06_05', 2, , TRUE, 0);
-    Talk(Sound'S4_3_0Voice.Play_43_06_06', 3, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0002L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_01', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0003L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_02', 3, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0004L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_03', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0005L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_04', 3, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0006L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_05', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_3_0_RestaurantCook", "Speech_0007L", "Localization\\P_4_3_0ChineseEmbassy"), Sound'S4_3_0Voice.Play_43_06_06', 3, 0, TR_CONVERSATION, 0, false);
     Close();
 AlreadyStarted:
     End();

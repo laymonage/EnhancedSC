@@ -69,10 +69,10 @@ TruckMoving:
     Log("TruckDeparture");
     CinCamera(0, 'TruckCinematicPosition01', 'TruckCinematicTarget01',);
     Sleep(1);
-    Talk(Sound'S4_3_2Voice.Play_43_31_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_2_WarehouseTrucks", "Speech_0003L", "Localization\\P_4_3_2ChineseEmbassy"), Sound'S4_3_2Voice.Play_43_31_01', 1, 0, TR_CONVERSATION, 0, false);
     CinCamera(1, , ,);
     CinCamera(0, 'TruckCinematicPosition02', 'TruckCinematicTarget01',);
-    Talk(Sound'S4_3_2Voice.Play_43_31_02', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_3_2_WarehouseTrucks", "Speech_0002L", "Localization\\P_4_3_2ChineseEmbassy"), Sound'S4_3_2Voice.Play_43_31_02', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     Goal_Set(1,GOAL_Action,9,,,,,'PumpStNmEd0',FALSE,,,,);
     Sleep(0.2);

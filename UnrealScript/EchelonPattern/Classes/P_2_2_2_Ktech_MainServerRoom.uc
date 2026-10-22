@@ -67,7 +67,7 @@ MainServerRoom:
     Goal_Set(1,GOAL_Action,9,,'ServerRoomFocus01',,'ServerRoomFocus01','KbrdStNmBg0',FALSE,-1,,,);
     WaitForGoal(1,GOAL_Action,);
     Goal_Set(1,GOAL_Action,9,,'ServerRoomFocus01',,'ServerRoomFocus01','RdioStNmNt0',FALSE,,,,);
-    Talk(Sound'S2_2_2Voice.Play_22_33_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_MainServerRoom", "Speech_0003L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_33_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(7);
     Close();
     WaitForGoal(1,GOAL_Action,);

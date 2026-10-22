@@ -57,7 +57,7 @@ PhoneCall:
     Goal_Default(1,GOAL_Guard,0,,'KetevanLookOut',,'KetevanGuard',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(1,GOAL_Action,9,,'KetevanLookOut',,,'RdioStNmBg0',FALSE,,,,);
     Goal_Set(1,GOAL_Stop,8,,'KetevanLookOut',,,'RdioStNmNt0',FALSE,29,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S1_1_1Voice.Play_11_10_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0001L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_10_01', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(1,GOAL_Action,7,,'KetevanLookOut',,'KetevanGuard','RdioStNmEd0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Close();
     End();
@@ -71,11 +71,11 @@ Entree:
     CheckIfGrabbed(1,'WhereDidHeGo');
     Goal_Set(2,GOAL_MoveTo,8,,'Ketevan','Ketevan','MakarChat',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(2,GOAL_Stop,7,,'Ketevan','Ketevan','MakarChat',,FALSE,16,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S1_1_1Voice.Play_11_15_01', 1, , TRUE, 0);
-    Talk(Sound'S1_1_1Voice.Play_11_15_02', 2, , TRUE, 0);
-    Talk(Sound'S1_1_1Voice.Play_11_15_03', 1, , TRUE, 0);
-    Talk(Sound'S1_1_1Voice.Play_11_15_04', 2, , TRUE, 0);
-    Talk(Sound'S1_1_1Voice.Play_11_15_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0017L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0019L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0011L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0012L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_04', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0013L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_05', 1, 0, TR_CONVERSATION, 0, false);
     ResetGroupGoals();
     Goal_Set(2,GOAL_MoveTo,9,,,,'PathNode',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     End();

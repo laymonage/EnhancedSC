@@ -56,14 +56,14 @@ HostageB:
     CheckFlags(FirstTalkDone,TRUE,'HostageBBark');
     SetFlags(FirstTalkDone,TRUE);
     Goal_Set(1,GOAL_Action,9,,,,,'PrsoCrAlAA0',FALSE,,MOVE_CrouchJog,,MOVE_CrouchJog);
-    Talk(Sound'S2_2_2Voice.Play_22_34_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_HostageBTalks", "Speech_0002L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_34_05', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 HostageBBark:
     Log("HostageBBark");
     Goal_Set(1,GOAL_Action,9,,,,,'PrsoCrAlBB0',FALSE,,MOVE_CrouchJog,,MOVE_CrouchJog);
     Goal_Default(1,GOAL_Wait,8,,,,,'WaitCrAlFd0',FALSE,,MOVE_CrouchJog,,MOVE_CrouchJog);
-    Talk(Sound'S2_2_2Voice.Play_22_34_06', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_2_Ktech_HostageBTalks", "Speech_0001L", "Localization\\P_2_2_2_Kalinatek"), Sound'S2_2_2Voice.Play_22_34_06', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     EndConversation();
     End();

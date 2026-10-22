@@ -59,8 +59,8 @@ ConversationWithCIAContact:
     Log("This is the conversation with the CIA contact");
     CheckFlags(TalkOnce,TRUE,'TalkTwo');
     SetFlags(TalkOnce,TRUE);
-    Talk(Sound'S4_1_1Voice.Play_41_17_01', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_02', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0013L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_01', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0001L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_02', 1, 0, TR_CONVERSATION, 0, false);
     Goal_Set(1,GOAL_Action,9,,'PLAYER','PLAYER',,'GiveStNmBg0',FALSE,,,,);
     WaitForGoal(1,GOAL_Action,);
     AddRecon(class 'EReconMap4_1');
@@ -71,16 +71,16 @@ ConversationWithCIAContact:
     Goal_Default(1,GOAL_Guard,9,,'PLAYER','PLAYER',,,FALSE,,,,);
     GoalCompleted('4_1_1');
     SetFlags(V4_1_1ChineseEmbassy(Level.VarObject).GoalAgencyContact,TRUE);
-    Talk(Sound'S4_1_1Voice.Play_41_17_03', 1, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_04', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_05', 1, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_06', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_07', 1, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_08', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_09', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0002L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0003L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_04', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0004L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0005L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_06', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0006L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_07', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0007L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_08', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0008L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_09', 1, 0, TR_CONVERSATION, 0, false);
     AddGoal('4_1_3', "", 10, "", "P_4_1_1_CEmb_CIAContact", "Goal_0022L", "Localization\\P_4_1_1ChineseEmbassy", "P_4_1_1_CEmb_CIAContact", "Goal_0023L", "Localization\\P_4_1_1ChineseEmbassy");
-    Talk(Sound'S4_1_1Voice.Play_41_17_10', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_11', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0009L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_10', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0010L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_11', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     SendPatternEvent('contactonroof','Milestone');
     End();
@@ -88,16 +88,16 @@ TalkTwo:
     Log("TalkTwo");
     CheckFlags(TalkTwice,TRUE,'TalkThree');
     SetFlags(TalkTwice,TRUE);
-    Talk(Sound'S4_1_1Voice.Play_41_17_12', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_13', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0014L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_12', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0015L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_13', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 TalkThree:
     Log("TalkThree");
     CheckFlags(TalkThird,TRUE,'LastTalk');
     SetFlags(TalkThird,TRUE);
-    Talk(Sound'S4_1_1Voice.Play_41_17_14', 0, , TRUE, 0);
-    Talk(Sound'S4_1_1Voice.Play_41_17_15', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0016L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_14', 0, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0017L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_15', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 LastTalk:
@@ -106,12 +106,12 @@ LastTalk:
     End();
 lasttalkone:
     Log("lasttalkone");
-    Talk(Sound'S4_1_1Voice.Play_41_17_16', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0018L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_16', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 lasttalktwo:
     Log("lasttalktwo");
-    Talk(Sound'S4_1_1Voice.Play_41_17_17', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_1_1_CEmb_CIAContact", "Speech_0019L", "Localization\\P_4_1_1ChineseEmbassy"), Sound'S4_1_1Voice.Play_41_17_17', 1, 0, TR_CONVERSATION, 0, false);
     Close();
 End:
     End();

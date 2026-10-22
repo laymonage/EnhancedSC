@@ -54,17 +54,17 @@ UShostage1:
     JumpRandom('Talk1', 0.34, 'Talk2', 0.67, 'Talk3', 1.00, , , ,);
 Talk1:
     Log("");
-    Talk(Sound'S4_2_2Voice.Play_42_51_04', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_TheHosTalk2", "Speech_0001L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_51_04', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 Talk2:
     Log("");
-    Talk(Sound'S4_2_2Voice.Play_42_51_05', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_TheHosTalk2", "Speech_0002L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_51_05', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 Talk3:
     Log("");
-    Talk(Sound'S4_2_2Voice.Play_42_51_06', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_4_2_2_Abt_TheHosTalk2", "Speech_0003L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_51_06', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     End();
 

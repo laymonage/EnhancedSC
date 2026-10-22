@@ -55,15 +55,15 @@ state Pattern
 Begin:
 RoofAmbushD:
     Log("");
-    Talk(Sound'S2_2_3Voice.Play_22_57_01', 1, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_57_02', 2, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_57_03', 1, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_57_04', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0001L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_01', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0001L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0002L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0003L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_04', 2, 0, TR_CONVERSATION, 0, false);
     Goal_Set(1,GOAL_MoveTo,9,,,,'RoofAmbushDNode01',,FALSE,,MOVE_WalkRelaxed,,MOVE_WalkRelaxed);
     Goal_Set(1,GOAL_MoveTo,8,,,,'RoofAmbushDNode03',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S2_2_3Voice.Play_22_57_05', 1, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_57_06', 2, , TRUE, 0);
-    Talk(Sound'S2_2_3Voice.Play_22_57_07', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0007L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0005L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_06', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_2_2_3_Ktech_RoofAmbushD", "Speech_0006L", "Localization\\P_2_2_3_Kalinatek"), Sound'S2_2_3Voice.Play_22_57_07', 1, 0, TR_CONVERSATION, 0, false);
     Close();
     UpdateGoal(1,'RoofAmbushDNode01',FALSE,MOVE_WalkNormal);
     UpdateGoal(2,'RoofAmbushDNode05',FALSE,MOVE_JogAlert);

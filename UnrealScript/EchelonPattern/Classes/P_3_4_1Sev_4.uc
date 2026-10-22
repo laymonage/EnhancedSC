@@ -60,16 +60,16 @@ Begin:
 UPSChatGo:
     Log("Efrem tells Vasilii that the UPS cables are hooked up.");
     Goal_Default(1,GOAL_Guard,0,,'Vasilii',,'EfremUPSChat',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S3_4_2Voice.Play_34_14_01', 1, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0001L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_01', 1, 0, TR_CONVERSATION, 0, false);
     Sleep(1);
     Goal_Set(2,GOAL_Guard,9,,'Efrem',,'VasyaFocusChat',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
-    Talk(Sound'S3_4_2Voice.Play_34_14_02', 2, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_03', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_04', 2, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_05', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_06', 2, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_07', 1, , TRUE, 0);
-    Talk(Sound'S3_4_2Voice.Play_34_14_08', 2, , TRUE, 0);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0002L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_02', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0003L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_03', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0004L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_04', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0005L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_05', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0006L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_06', 2, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0007L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_07', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_3_4_1Sev_4", "Speech_0008L", "Localization\\P_3_4_2Severonickel"), Sound'S3_4_2Voice.Play_34_14_08', 2, 0, TR_CONVERSATION, 0, false);
     Close();
     AddNote("", "P_3_4_1Sev_4", "Note_0001L", "Localization\\P_3_4_2Severonickel");
     ResetGoals(2);
