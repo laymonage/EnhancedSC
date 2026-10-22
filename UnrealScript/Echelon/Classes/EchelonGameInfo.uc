@@ -211,6 +211,8 @@ var(Enhanced) config ETurnOffDistanceScale TurnOffDistanceScale;
 
 var(Enhanced) config bool bDisableAlertSound; // Joshua - Option to disable alert sound that plays before Stress and Combat music
 
+var(Enhanced) config bool bConversationSubtitles; // Shows subtitles for conversations that originally played without them
+
 // Native Variables
 var(Enhanced) config bool bEnableRumble; // Joshua - UseRumble in Engine.GameInfo is now deprecated, this setting will now toggle rumble
 var(Enhanced) config bool bSkipIntroVideos;
@@ -504,6 +506,7 @@ defaultproperties
     bScaleGadgetDamage=True
     bNewDoorInteraction=True
     bRandomizeLockpick=True
+    bConversationSubtitles=True
     WallMineDelay=WMD_Default
     ESam_Training=SMT_Default
     ESam_Tbilisi=SMT_Default

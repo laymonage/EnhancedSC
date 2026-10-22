@@ -104,6 +104,24 @@ function bool bIsFree()
     return bFree;
 }
 
+/*-----------------------------------------------------------------------------
+ Function:      IsHiddenConversation
+
+ Description:   True for a conversation line sent without text, which happens
+                when bConversationSubtitles is off. Such lines keep the box
+                closed so the conversation plays as it originally did.
+-----------------------------------------------------------------------------*/
+function bool IsHiddenConversation(EListNode Node)
+{
+	local ETransmissionObj T;
+
+	if (Node == None || CurrentTransmission != TR_CONVERSATION)
+		return false;
+
+	T = ETransmissionObj(Node.Data);
+	return T != None && T.Data == "";
+}
+
 function Draw(ECanvas Canvas)
 {
     GCanvas = Canvas;
@@ -375,8 +393,11 @@ auto state() Idle
 {
 	function Tick(float Delta)
 	{
+		local EListNode Node;
+
 		//Get current transmission Node
-		if (GetCurrentNode() != None)
+		Node = GetCurrentNode();
+		if (Node != None && !IsHiddenConversation(Node))
 		{
 			GotoState('BeginDisplay');
 		}
@@ -414,6 +435,13 @@ state() StandardDisplay
 
         // Get Current Transmission Node //
         Node = GetCurrentNode();
+
+		// A conversation can switch to a line without text, close the box for it
+		if (IsHiddenConversation(Node))
+		{
+			GotoState('EndDisplay');
+			return;
+		}
 
 		if (bWithVoice)
 		{

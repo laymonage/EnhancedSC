@@ -3605,6 +3605,20 @@ function SendNPCTransmission(string Text, sound SoundData)
 	EMainHUD(EPlayerController(Characters[0]).myHUD).CommunicationBox.AddTransmission(self, TR_NPCS, Text, SoundData);
 }
 
+//------------------------------------------------------------------------
+// Description:  Subtitle text for a conversation line that originally
+//               played through Talk() without any. Returns an empty string
+//               when bConversationSubtitles is off, which the communication
+//               box doesn't display.
+//------------------------------------------------------------------------
+function string ConversationSubtitle(string Section, string Cue, string File)
+{
+	if (!EchelonGameInfo(Level.Game).bConversationSubtitles)
+		return "";
+
+	return Localize(Section, Cue, File);
+}
+
 
 //--------------------------------------------------[Frederic Blais]-----
 //
