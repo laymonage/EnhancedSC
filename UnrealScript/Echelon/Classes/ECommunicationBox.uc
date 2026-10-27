@@ -712,9 +712,15 @@ state s_Cinematic
 			// bConversationSubtitles off, aren't shown
 			if (T != None && T.Data != "")
 			{
-				// DRAW TEXT//
-				Canvas.SetPos(320,yTextPos);
-				Canvas.DrawTextAligned(T.Data , TXT_CENTER);
+				// DRAW TEXT, with a shadow to read over the scene when
+				// letterboxing is off //
+				Canvas.DrawColor = Canvas.black;
+				Canvas.SetPos(321, yTextPos + 1);
+				Canvas.DrawTextAligned(T.Data, TXT_CENTER);
+
+				Canvas.DrawColor = Canvas.white;
+				Canvas.SetPos(320, yTextPos);
+				Canvas.DrawTextAligned(T.Data, TXT_CENTER);
 
 				Canvas.SetPos(0,0);
 				yTextPos += yLen * Canvas.GetNbStringLines(T.Data, 1.0f);
