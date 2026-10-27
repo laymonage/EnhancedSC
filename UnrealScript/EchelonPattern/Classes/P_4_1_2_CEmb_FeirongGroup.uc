@@ -153,6 +153,7 @@ FeirongConversationB:
     Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0012L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_01', 3, 0, TR_CONVERSATION, 34, false);
     Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0047L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_02', 3, 0, TR_CONVERSATION, 33, false);
     Speech(ConversationSubtitle("P_4_1_2_CEmb_FeirongGroup", "Speech_0043L", "Localization\\P_4_1_2ChineseEmbassy"), Sound'S4_1_2Voice.Play_41_35_03', 3, 0, TR_CONVERSATION, 33, false);
+    Close();
     LaserMicSession(1,,50,'MainGateCheck');
     SendPatternEvent('LambertBogus','LaserMicFailure');
     End();

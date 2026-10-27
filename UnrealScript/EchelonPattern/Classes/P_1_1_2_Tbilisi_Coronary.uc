@@ -70,6 +70,7 @@ WhichInt:
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0025L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_29', 1, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0026L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_30', 0, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0027L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_31', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 AfterBlaustein:
     Log("Blaustein has been found. Playing second interrogation.");
@@ -94,6 +95,7 @@ AfterBlaustein:
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0017L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_17', 0, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0018L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_18', 1, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0019L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_19', 0, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 BeforeRepeat:
     Log("The tech has said all he has to say.");
@@ -101,10 +103,12 @@ BeforeRepeat:
 B4Va:
     Log("");
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0033L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_33', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 B4Vb:
     Log("");
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0032L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_32', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 AfterRepeat:
     Log("The tech has said all he has to say");
@@ -114,6 +118,7 @@ AfterRepeat:
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0029L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_21', 1, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0030L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_22', 0, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0031L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_23', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 DoNothing:
     Log("Doing nothing");

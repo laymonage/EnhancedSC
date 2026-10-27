@@ -112,16 +112,19 @@ OffHeard:
     Log("OffHeard - Hidebody06");
     DisableMessages(TRUE, TRUE);
     Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Hidebody06", "Speech_0003L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_11', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     Jump('Failed');
 OffSaw:
     Log("OffSaw - Hidebody06");
     DisableMessages(TRUE, TRUE);
     Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Hidebody06", "Speech_0004L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_12', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     Jump('Failed');
 OffSawBody:
     Log("");
     DisableMessages(TRUE, TRUE);
     Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Hidebody06", "Speech_0005L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_13', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     Jump('Failed');
 OffDamage:
     Log("OffDamage - Hidebody06");

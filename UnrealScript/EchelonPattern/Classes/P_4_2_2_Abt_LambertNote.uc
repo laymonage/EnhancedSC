@@ -100,6 +100,7 @@ MeetLongDan:
     Goal_Default(2,GOAL_Action,1,,,,,'LstnStNmBB0',FALSE,,,,);
 blam2:
     Speech(ConversationSubtitle("P_4_2_2_Abt_LambertNote", "Speech_0027L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_50_15', 2, 0, TR_CONVERSATION, 0, false);
+    Close();
     EndConversation();
     IgnoreAlarmStage(TRUE); // Joshua - Fight has begun, disable alarms
 SkipLD:

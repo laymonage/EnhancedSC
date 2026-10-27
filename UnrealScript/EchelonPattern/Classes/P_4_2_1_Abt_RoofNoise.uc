@@ -78,6 +78,7 @@ FirstTime:
     SetFlags(Pass2,TRUE);
 	SoundActors[0].PlaySound(Sound'S4_2_1Voice.Stop_42_35_01', SLOT_Barks);
     Speech(ConversationSubtitle("P_4_2_1_Abt_RoofNoise", "Speech_0005L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_07_01', 3, 0, TR_CONVERSATION, 0, false);
+    Close();
     Talk(Sound'S4_2_1Voice.Play_42_07_02', 3, , FALSE, 0);
     SendPatternEvent('EGroupAI18','ResetPass1');
     End();
@@ -128,6 +129,7 @@ FlagAntennaSAFE:
 GrinkoTalk:
     Log("GrinkoTalk");
     Speech(ConversationSubtitle("P_4_2_1_Abt_RoofNoise", "Speech_0006L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_35_01', 3, 0, TR_CONVERSATION, 0, false);
+    Close();
     End();
 StopTalk:
     Log("");

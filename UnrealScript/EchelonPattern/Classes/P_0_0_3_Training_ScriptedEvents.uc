@@ -121,6 +121,7 @@ FinaleStart:
     Goal_Set(1,GOAL_Action,8,,'LambertFocus','LambertFocus','LambertChatFinal','TalkStNmBB0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Goal_Set(1,GOAL_Action,7,,'LambertFocus','LambertFocus','LambertChatFinal','TalkStNmCC0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Speech(ConversationSubtitle("P_0_0_3_Training_ScriptedEvents", "Speech_0015L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_30_15', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     GameOver(true, 0);
     End();
 DoNothing:

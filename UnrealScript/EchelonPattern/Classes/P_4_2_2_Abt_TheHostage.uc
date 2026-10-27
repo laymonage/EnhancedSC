@@ -137,18 +137,21 @@ UsSpeach1:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0007L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_01', 4, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0008L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_02', 4, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 UsSpeach2:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0009L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_03', 5, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0010L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_04', 5, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 UsSpeach3:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0011L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_05', 6, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0012L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_66_06', 6, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 DiplomatSpeach:
@@ -159,17 +162,20 @@ DiploSpeach1:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0013L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_67_01', 2, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0014L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_67_02', 3, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 DiploSpeach2:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0015L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_67_02', 3, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 DiploSpeach3:
     Log("");
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0016L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_67_01', 2, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_4_2_2_Abt_TheHostage", "Speech_0017L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_67_03', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     DisableMessages(FALSE, FALSE);
     End();
 

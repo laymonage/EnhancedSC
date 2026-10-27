@@ -133,6 +133,7 @@ start:
     ResetGoals(6);
     Goal_Set(6,GOAL_Action,9,,,,,'LstnStNmCC0',FALSE,,,,);
     Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0005L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_10_04', 6, 0, TR_CONVERSATION, 0, false);
+    Close();
     ResetGoals(1);
     Goal_Set(1,GOAL_MoveTo,9,,,,'PathNode408',,FALSE,,,,);
     Goal_Set(1,GOAL_Wait,8,,,,'PathNode408',,FALSE,,,,);
@@ -218,6 +219,7 @@ start2:
     ResetGoals(9);
     Goal_Default(9,GOAL_Wait,9,,,,'PathNode203',,FALSE,,,,);
     Speech(ConversationSubtitle("P_4_2_1_Abt_Studio", "Speech_0019L", "Localization\\P_4_2_1_Abattoir"), Sound'S4_2_1Voice.Play_42_31_01', 5, 0, TR_CONVERSATION, 0, false);
+    Close();
     Sleep(2);
     ResetGoals(5);
     Goal_Default(5,GOAL_Wait,9,,,,'PathNode202',,FALSE,,,,);

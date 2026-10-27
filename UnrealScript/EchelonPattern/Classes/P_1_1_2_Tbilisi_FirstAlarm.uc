@@ -83,6 +83,7 @@ HARRASS:
     Goal_Set(1,GOAL_Action,5,,'Drunk',,'Drunk','TalkStNmBB0',FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_FirstAlarm", "Speech_0011L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_27_11', 1, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_2_Tbilisi_FirstAlarm", "Speech_0012L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_27_12', 3, 0, TR_CONVERSATION, 0, false);
+    Close();
     SetFlags(V1_1_1Tbilisi(Level.VarObject).OKtoKODrunk,TRUE);
     SendPatternEvent('DrunkTicker','Knocked');
     End();

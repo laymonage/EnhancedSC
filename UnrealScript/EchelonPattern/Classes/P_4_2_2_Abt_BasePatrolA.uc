@@ -84,6 +84,7 @@ BasePatrolA:
     Goal_Set(1,GOAL_Action,7,,,,,'TalkStNmBB0',FALSE,,,,);
     Goal_Set(1,GOAL_Action,6,,,,,'TalkStNmCC0',FALSE,,,,);
     Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolA", "Speech_0010L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_41_08', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     ResetGoals(1);
     Goal_Default(1,GOAL_Patrol,9,,,,'EGeorgianSoldier23_100',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     Sleep(1);

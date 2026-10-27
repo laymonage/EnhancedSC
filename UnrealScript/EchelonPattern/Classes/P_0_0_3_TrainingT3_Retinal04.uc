@@ -96,6 +96,7 @@ OffHeard:
     DisableMessages(TRUE, TRUE);
     PlayerMove(false);
     Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Retinal04", "Speech_0003L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_09', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     Sleep(3);
     Jump('Failed');
 OffSaw:
@@ -103,6 +104,7 @@ OffSaw:
     DisableMessages(TRUE, TRUE);
     PlayerMove(false);
     Speech(ConversationSubtitle("P_0_0_3_TrainingT3_Retinal04", "Speech_0004L", "Localization\\P_0_0_3_Training"), Sound'S0_0_3Voice.Play_00_25_10', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     Sleep(3);
     Jump('Failed');
 OffDamage:

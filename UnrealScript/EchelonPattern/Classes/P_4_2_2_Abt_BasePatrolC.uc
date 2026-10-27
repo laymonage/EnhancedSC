@@ -72,6 +72,7 @@ NikOut:
     Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0003L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_03', 1, 0, TR_CONVERSATION, 0, false);
     Log("passed third line");
     Speech(ConversationSubtitle("P_4_2_2_Abt_BasePatrolC", "Speech_0004L", "Localization\\P_4_2_2_Abattoir"), Sound'S4_2_2Voice.Play_42_11_04', 2, 0, TR_CONVERSATION, 0, false);
+    Close();
     Log("passed last line, ending conversation");
     End();
 GetToDefaut:

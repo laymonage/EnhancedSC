@@ -76,6 +76,7 @@ Entree:
     Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0011L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_03', 1, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0012L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_04', 2, 0, TR_CONVERSATION, 0, false);
     Speech(ConversationSubtitle("P_1_1_1_Tbilisi_GrinkosMen", "Speech_0013L", "Localization\\P_1_1_1Tbilisi"), Sound'S1_1_1Voice.Play_11_15_05', 1, 0, TR_CONVERSATION, 0, false);
+    Close();
     ResetGroupGoals();
     Goal_Set(2,GOAL_MoveTo,9,,,,'PathNode',,FALSE,,MOVE_WalkNormal,,MOVE_WalkNormal);
     End();
