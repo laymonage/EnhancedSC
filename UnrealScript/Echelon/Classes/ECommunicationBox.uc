@@ -690,7 +690,7 @@ state s_Cinematic
         local EListNode Node;
         local int yTextPos;
         local ETransmissionObj T;
-        local float xLen, yLen;
+        local float xLen, yLen, TextHeight;
 
 		GCanvas = Canvas;
         Canvas.Font = Canvas.ETextFont;
@@ -698,9 +698,19 @@ state s_Cinematic
         Canvas.SetClip(600, 480);
         Canvas.TextSize("T", xLen, yLen);
 
+		// Start higher when the text would run off the bottom of the screen.
+		// GetNbStringLines wraps from the current position, so measure from 0.
+		Canvas.SetPos(0,0);
+		for (Node = GetCurrentNode(); Node != None; Node = Node.NextNode)
+		{
+			T = ETransmissionObj(Node.Data);
+			if (T != None && T.Data != "")
+				TextHeight += yLen * Canvas.GetNbStringLines(T.Data, 1.0f);
+		}
+		yTextPos = Min(430, 478 - int(TextHeight));
+
         // Get Current Transmission Node //
         Node = GetCurrentNode();
-        yTextPos = 430;
 
         while (Node != None)
 		{
