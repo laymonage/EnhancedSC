@@ -708,12 +708,17 @@ state s_Cinematic
 
             //if ((CurrentTransmission != TR_CONVERSATION) && (CurrentTransmission != TR_HEADQUARTER))
 
-            // DRAW TEXT//
-            Canvas.SetPos(320,yTextPos);
-			Canvas.DrawTextAligned(T.Data , TXT_CENTER);
+			// Lines without text, such as conversation lines with
+			// bConversationSubtitles off, aren't shown
+			if (T != None && T.Data != "")
+			{
+				// DRAW TEXT//
+				Canvas.SetPos(320,yTextPos);
+				Canvas.DrawTextAligned(T.Data , TXT_CENTER);
 
-            Canvas.SetPos(0,0);
-            yTextPos += yLen * Canvas.GetNbStringLines(T.Data, 1.0f);
+				Canvas.SetPos(0,0);
+				yTextPos += yLen * Canvas.GetNbStringLines(T.Data, 1.0f);
+			}
 
 			//yTextPos += T.YSpace;
 			Node      = Node.NextNode;
