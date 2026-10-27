@@ -100,11 +100,11 @@ BeforeRepeat:
     JumpRandom('B4Va', 0.50, 'B4Vb', 1.00, , , , , ,);
 B4Va:
     Log("");
-    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0028L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_33', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0033L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_33', 1, 0, TR_CONVERSATION, 0, false);
     End();
 B4Vb:
     Log("");
-    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0029L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_32', 1, 0, TR_CONVERSATION, 0, false);
+    Speech(ConversationSubtitle("P_1_1_2_Tbilisi_Coronary", "Speech_0032L", "Localization\\P_1_1_2Tbilisi"), Sound'S1_1_2Voice.Play_11_32_32', 1, 0, TR_CONVERSATION, 0, false);
     End();
 AfterRepeat:
     Log("The tech has said all he has to say");
@@ -120,4 +120,3 @@ DoNothing:
     End();
 
 }
-
