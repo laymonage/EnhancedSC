@@ -53,7 +53,8 @@ var EPCComboControl         m_MineDelay;
 var EPCCheckBox             m_bPersistentHUD,
                             m_bHorizontalLifeBar,
                             m_bInvertInteractionList,
-                            m_bLetterBoxCinematics;
+                            m_bLetterBoxCinematics,
+                            m_bConversationSubtitles;
 
 // Native
 var EPCComboControl         m_FontType;
@@ -230,6 +231,7 @@ function InitEnhancedSettings()
     AddCheckBoxItem("HorizontalLifeBar", m_bHorizontalLifeBar);
     AddCheckBoxItem("InvertInteractionList", m_bInvertInteractionList);
     AddCheckBoxItem("LetterBoxCinematics", m_bLetterBoxCinematics);
+    AddCheckBoxItemWithInfo("ConversationSubtitles", m_bConversationSubtitles);
 
     AddCompactLineItem();
     AddComboBoxItem("FontType", m_FontType);
@@ -635,6 +637,7 @@ function Notify(UWindowDialogControl C, byte E)
             case m_bHorizontalLifeBar:
             case m_bInvertInteractionList:
             case m_bLetterBoxCinematics:
+            case m_bConversationSubtitles:
                 m_bModified = true;
                 break;
 
@@ -926,6 +929,7 @@ function SaveOptions()
     EPC.bHorizontalLifeBar = m_bHorizontalLifeBar.m_bSelected;
     EPC.bInvertInteractionList = m_bInvertInteractionList.m_bSelected;
     HUD.bLetterBoxCinematics = m_bLetterBoxCinematics.m_bSelected;
+    EPC.eGame.bConversationSubtitles = m_bConversationSubtitles.m_bSelected;
 
     switch (m_FontType.GetSelectedIndex())
     {
@@ -1118,6 +1122,7 @@ function ResetToDefault()
     m_bHorizontalLifeBar.m_bSelected = false;
     m_bInvertInteractionList.m_bSelected = true;
     m_bLetterBoxCinematics.m_bSelected = true;
+    m_bConversationSubtitles.m_bSelected = true;
     m_FontType.SetSelectedIndex(1); // Default to Xbox
     m_CrosshairStyle.SetSelectedIndex(0);
 
@@ -1280,6 +1285,9 @@ function Refresh()
 
     if (m_bLetterBoxCinematics != None)
         m_bLetterBoxCinematics.m_bSelected = HUD.bLetterBoxCinematics;
+
+    if (m_bConversationSubtitles != None)
+        m_bConversationSubtitles.m_bSelected = EPC.eGame.bConversationSubtitles;
 
     if (m_FontType != None && EPC != None)
         m_FontType.SetSelectedIndex(Clamp(EPC.eGame.FontType, 0, m_FontType.List.Items.Count() - 1));
